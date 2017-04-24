@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回" />
+
+    <TextView
+        android:id="@+id/tx_spp_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp"
+        android:text="SPP连接状态" />
+
+    <Button
+        android:id="@+id/btn_open_bt_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙列表" />
+
+
+    <EditText
+        android:id="@+id/et_send_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="发送的内容"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="发送" />
+
+    <TextView
+        android:id="@+id/tx_receive_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="收到的内容" />
+</LinearLayout>
