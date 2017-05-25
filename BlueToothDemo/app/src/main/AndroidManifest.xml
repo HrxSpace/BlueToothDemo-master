@@ -32,6 +32,12 @@
             android:name="com.kaka.btdemo.activity.LinkPhoneActivity"
             android:launchMode="singleTask" />
         <activity android:name="com.kaka.btdemo.activity.BtListActivity" />
+
+        <receiver android:name=".receiver.BluetoothReceiver">
+            <intent-filter>
+                <action android:name="android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
